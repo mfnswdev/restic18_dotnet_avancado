@@ -1,0 +1,166 @@
+2. Sintaxe Básica de C#: Variáveis, Tipos de Dados e Operadores:**
+
+2.1. Explique a importância das variáveis em C# e forneça um exemplo de declaração.
+
+É onde são armazenados informações temporarias, essencial para o funcionamento do codigo.
+
+Exemplo: Var varivel.
+
+2.2. Quais são os tipos de dados básicos em C# e como são utilizados?
+
+int, float, string, char, double, var, boolean.
+
+Exemplo: int numero = 1;
+
+2.3. Dê exemplos de operadores aritméticos e lógicos em C#.
+
++, -, *, /, //, ++, --, &, ||, ?
+
+
+**3. Estruturas de Controle de Fluxo: Condicionais e Loops em C#:**
+
+3.1. Como as estruturas condicionais são implementadas em C#? Dê um exemplo.
+
+São implementadas com o if, else, elif
+
+if(algo)
+	//Faça alguma coisa;
+
+3.2. Explique o funcionamento dos loops em C# e forneça um exemplo de uso.
+
+Loops são laçõs de repetições que se repetem até que uma certa condição seja satisfeita,
+
+for(int i = 0; i < n; i++)
+	Console.WriteLine(i);
+
+3.3. Qual é a diferença entre o "for" e o "while" em termos de controle de fluxo?
+
+Geralmente for é usado quando vc sabe a quantidade de repetições necessarias, ou seja, repetição por contador.
+Ja o while, vc geralmente não sabe, ou seja, repetição por sentinela.
+
+**4. Strings, Arrays e Listas, Datas:**
+
+4.1. Descreva operações comuns realizadas em strings em C#.
+
+.toUpper, .toLower, .capitalize
+
+4.2. Compare e contraste Arrays e Listas em termos de funcionalidade e uso.
+
+Não sei a diferença entre os dois.
+
+4.3. Como as datas são representadas e manipuladas em C#? Dê exemplos.
+
+Pelo que me lembro tem um formato especifico para se trabalhar com datas chamado DateTime,
+Nele é salvo o horario, dia, mes e ano.
+
+**5. Language Integrated-Query (LINQ):**
+5.1. O que é o LINQ e qual é sua finalidade em C#?
+
+LINQ é como se fosse uma função porém feita de uma forma mais otimizada
+
+5.2. Forneça um exemplo prático de utilização do LINQ em uma coleção de dados.
+
+var dado = Usuarios.where(m => m.Idade >= 18);
+
+Para salvar na variavel dado todos os usarios que tem idade maior ou igual a 18 anos.
+
+5.3. Quais são as vantagens de usar o LINQ em comparação com abordagens convencionais?
+
+Acredito que seja pela praticidade
+
+**6. Debugging e Exceções:**
+
+6.1. Descreva o processo de debugging em C# e mencione ferramentas úteis.
+
+Eu geralmente coloco um breakpoint onde preciso ver os dados da variavel e ai executo o modo debug do vscode e vou passo a passo vendo os valores das variaveis
+
+6.2. Qual é o papel das exceções em C#? Como são tratadas no código?
+
+Evitar que o codigo crash ao se deparar com uma exceção, ou controlar o comportamento do codigo em caso de uma exceção, para que a aplicação não pare por causa de uma exceção.
+
+6.3. Dê um exemplo de como utilizar a declaração "try-catch" para lidar com exceções.
+
+Try{
+	var valor = 1/0;
+	Console.WriteLine(valor);
+}
+Except{
+	Console.WirteLine("Não pode dividir por 0");
+}
+
+
+**7. Conceitos de POO em C#:**
+7.1. Explique o que é Programação Orientada a Objetos (POO) e sua importância em C#.
+
+POO é uma forma de promogração onde as entidades são pensadas como se fossem objetos, contendo atributos, como se fossem caracteristicas e os metodos, como se fosse as ações daquela entidade.
+Como se ao pensar em um carro, separassemos os atributos que são o que definem um carro e os metodos que são o que o carro pode fazer.
+
+7.2. Quais são os pilares da POO? Descreva cada um brevemente.
+
+Herança, polimorfismo, abstração, encapsulamento.
+
+7.3. Dê um exemplo prático de como um objeto é criado em C#.
+
+Pessoa Alberto = new Pessoa("Alberto");
+
+**8. Encapsulamento, Construtores e Destrutores:**
+8.1. Por que o encapsulamento é considerado importante na Programação Orientada a Objetos?
+
+
+
+8.2. Explique a função dos construtores e destrutores em uma classe C#.
+
+Construtores servem para instanciar um objeto de uma classe e destrutores para desinstanciar esse objeto
+
+8.3. Como você implementaria um construtor em uma classe?
+
+public class Pessoa{
+
+	string _nome = {get, set};
+	
+	public Pessoa(string nome){
+		_nome = nome)
+	}
+}
+
+
+**9. Herança e Polimorfismo:**
+9.1. O que é herança em C# e como ela é aplicada?
+
+Herança é quando uma classe filho, herda os atributos e metodos de uma classe pai
+
+public class Usuario : Pessoa{
+	string login = {get, set};
+}
+
+So precisa especificar os atributos e metodos do usuario, pois o basico como, nome, data de nascimento, que é comum para todas as pessoas, ja esta espeficado na classe pessoa.
+
+9.2. Explique o conceito de polimorfismo e forneça um exemplo prático.
+
+Acredito que polimorfismo seja conseguir criar varios construtores de uma classe com parametros diferentes.
+
+9.3. Quais são as vantagens da herança e do polimorfismo na programação orientada a objetos?
+
+Herança e polimorfismo são muito praticos para evitar escrever o mesmo codigos varias vezes, uma classe usuario por exemplo, pode herdar atributos de uma classe pai chamada pessoa,
+pois todo usuario tambem é uma pessoa, não é necessarios reescrever os atributos e metodos de uma pessoa no usuario por exemplo e caso haja tambem haja uma alteração em pessoa,
+não sera necessario ir de classe em classe que tinha aqueles dados em comum e ir modificando, modifica apenas em pessoa e todo o resto é alterado tambem.
+
+
+**10. Classes Abstratas e Interfaces:**
+10.1. Qual é a diferença entre uma classe abstrata e uma interface em C#?
+
+Acho que interface não pode ter a implementação de nenhum tipo de atributo ou metodo, ja uma classe abstrada você pode ter e utilizar seus metodos sem intanciar a classe.
+
+10.2. Em que cenários você optaria por usar uma classe abstrata em vez de uma interface?
+
+Em um cenario onde eu precisaria de um metodo porém não precisaria instanciar aquela classe, por exemplo, um metodo de somar dois numeros, poderia ser uma classe abstrata calculadora
+e so chamar no meu codigo calculadora.soma(1,1); algo do tipo.
+
+10.3. Dê um exemplo de implementação de uma interface em C#.
+
+public inteface Pedido{
+
+	int id = {get, set};
+
+}
+
