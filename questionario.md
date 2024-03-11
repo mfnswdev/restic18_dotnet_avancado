@@ -99,3 +99,6 @@ Herança: Quando se coloca em uma classe (que é o molde para o objeto) caracter
 Classe abstrata é uma  classe que não pode ser instanciada, servem como modelo para outros. Interface é uma forma de definir um contrato e a classe que a implementar, deverá, obrigatoriamente, definir os metodos, por exemplo, nela.
 10.2. Em que cenários você optaria por usar uma classe abstrata em vez de uma interface?
 10.3. Dê um exemplo de implementação de uma interface em C#.
+
+
+**lido - denis**
