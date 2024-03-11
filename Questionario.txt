@@ -1,0 +1,112 @@
+2. Sintaxe Básica de C#: Variáveis, Tipos de Dados e Operadores:**
+2.1. Explique a importância das variáveis em C# e forneça um exemplo de declaração.
+R:
+variáveis são utilizadas para trabalhar e manipular valores de diferentes tipos de dados.
+int a = 10;
+ibt b = 20;
+int c = a + b;
+
+2.2. Quais são os tipos de dados básicos em C# e como são utilizados?
+R:
+int, float, boolean, char, string.
+tipo int armazena dados númericos de tipo inteiro, float armazena dados númericos de tipo real, boolean armazena dados de tipo
+booleano(falso, verdadeiro), char armazena dados do tipo caracter, string armazena um conjunto de caracteres.
+
+2.3. Dê exemplos de operadores aritméticos e lógicos em C#.
+R:
++, -, /, *, &&, ||, <=, ==, >=, ?, !=, <, >
+
+**3. Estruturas de Controle de Fluxo: Condicionais e Loops em C#:**
+3.1. Como as estruturas condicionais são implementadas em C#? Dê um exemplo.
+R:
+estruturas condicionais funcionam no sentido de que alguma condição é testada, mediante o resultado dessa condição,
+determinada estrutura de código é executada, ou então uma outra estrutura
+if (a == 10){
+    a = 5;
+}else{
+    a = 15;
+}
+
+3.2. Explique o funcionamento dos loops em C# e forneça um exemplo de uso.
+R:
+loops realizam certa sequência de comandos uma determinada quantidade de vezes
+for(int i = 0; i < 10; i++){
+    a = a * 5;
+}
+
+3.3. Qual é a diferença entre o "for" e o "while" em termos de controle de fluxo?
+R:
+o while executa os comandos enquanto a condição de parada for verdadeira, o for executa enquanto a condição da 
+iteração for verdadeira.
+geralmente condições iteráveis utiliza o for, já condições não pré determinadas, ou não iteráveis, se usa o while
+
+**4. Strings, Arrays e Listas, Datas:**
+4.1. Descreva operações comuns realizadas em strings em C#.
+R:
+string nome = "joão";
+string segundoNome = " pedro";
+string nomeCompleto = nome+segundoNome;
+
+4.2. Compare e contraste Arrays e Listas em termos de funcionalidade e uso.
+R:
+listas possuem funcionalidades e funções especificas de manipulação, podendo também serem formadas listas de diferentes
+tipos de dados, inclusive complexos.
+array também é uma coleção de dados, mas a principal diferença de array para lista é que array possui um tamanho, ou
+quantidade de dados que podem ser armazenados pré definida, já a lista não, esse limitante seria variável.
+
+4.3. Como as datas são representadas e manipuladas em C#? Dê exemplos.
+R: 
+Datas são strings, porém em C# há o tipo Date, que represeta e manipula as datas de diferentes maneiras.
+
+**5. Language Integrated-Query (LINQ):**
+5.1. O que é o LINQ e qual é sua finalidade em C#?
+5.2. Forneça um exemplo prático de utilização do LINQ em uma coleção de dados.
+5.3. Quais são as vantagens de usar o LINQ em comparação com abordagens convencionais?
+
+
+**6. Debugging e Exceções:**
+6.1. Descreva o processo de debugging em C# e mencione ferramentas úteis.
+6.2. Qual é o papel das exceções em C#? Como são tratadas no código?
+R:
+excessões são estados de operações ou retornos que gerariam erro de compilação ou execução, elas podem ser utilizadas para
+evitar o finalização ou a "quebra" não intencional da aplicação que está sendo executada.
+
+6.3. Dê um exemplo de como utilizar a declaração "try-catch" para lidar com exceções.
+R:
+try-catch pode ser utilizado durante a execução de uma determinada seção de códigos, captando todo e qualquer exceções que
+ podem surgir durante a execução do código, tratando essas exceções e erros de forma a não parar a continuidade da execução
+ da aplicação. dessa forma você também pode criar as suas próprias excessões, tratando da maneira que você achar conveniente.
+
+**7. Conceitos de POO em C#:**
+7.1. Explique o que é Programação Orientada a Objetos (POO) e sua importância em C#.
+7.2. Quais são os pilares da POO? Descreva cada um brevemente.
+7.3. Dê um exemplo prático de como um objeto é criado em C#.
+R: 
+Pessoa p1 = new Pessoa();
+esse código iria criar um objeto p1 da classe Pessoa.
+
+
+**8. Encapsulamento, Construtores e Destrutores:**
+8.1. Por que o encapsulamento é considerado importante na Programação Orientada a Objetos?
+8.2. Explique a função dos construtores e destrutores em uma classe C#.
+8.3. Como você implementaria um construtor em uma classe?
+R:
+um construtor é utilizado para estanciar um objeto da classe, definindo os valores dos atributos presentes utilizando
+valores específicos desejados ou então os valores padrão do tipo de dado daquele atributo.
+
+
+**9. Herança e Polimorfismo:**
+9.1. O que é herança em C# e como ela é aplicada?
+R: 
+herança é uma referencia continuada entre classes, uma classe que herda outra possui os mesmos atributos da classe pai
+herdada. por exemplo podemos ter classe Pessoa, que possui os atributos cpf, nome, telefone. uma classe Médico que 
+herde da classe Pessoa, por herança também terá os atributos cpf, nome e telefone.
+
+9.2. Explique o conceito de polimorfismo e forneça um exemplo prático.
+9.3. Quais são as vantagens da herança e do polimorfismo na programação orientada a objetos?
+
+
+**10. Classes Abstratas e Interfaces:**
+10.1. Qual é a diferença entre uma classe abstrata e uma interface em C#?
+10.2. Em que cenários você optaria por usar uma classe abstrata em vez de uma interface?
+10.3. Dê um exemplo de implementação de uma interface em C#.
