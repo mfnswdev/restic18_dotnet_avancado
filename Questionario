@@ -1,0 +1,154 @@
+2. Sintaxe Básica de C#: Variáveis, Tipos de Dados e Operadores:
+
+2.1. 
+int idade;
+
+2.2.
+inteiros, números de ponto flutuante, caracteres, booleanos, entre outros
+
+2.3.
+Exemplos de operadores aritméticos e lógicos em C#:
+// Operadores aritméticos
+int x = 10;
+int y = 5;
+int soma = x + y;   // Soma
+int subtracao = x - y;   // Subtração
+int multiplicacao = x * y;   // Multiplicação
+int divisao = x / y;   // Divisão
+
+// Operadores lógicos
+bool verdadeiro = true;
+bool falso = false;
+bool resultadoE = verdadeiro && falso;   // E lógico
+bool resultadoOU = verdadeiro || falso;  // OU lógico
+bool resultadoNao = !verdadeiro;         // Negação
+
+
+3. Estruturas de Controle de Fluxo: Condicionais e Loops em C#:
+
+int idade = 20;
+
+if (idade >= 18)
+{
+    Console.WriteLine("A pessoa é maior de idade.");
+}
+else
+{
+    Console.WriteLine("A pessoa é menor de idade.");
+}
+
+3.2. Os loops em C# permitem que você repita um bloco de código várias vezes. Um exemplo de uso é o loop "for":
+
+for (int i = 0; i < 5; i++)
+{
+    Console.WriteLine("O valor de i é: " + i);
+}
+
+3.3. A diferença entre "for" e "while" em termos de controle de fluxo é que "for" é usado quando o número de iterações é conhecido antecipadamente, enquanto "while" é usado quando o número de iterações pode variar.
+
+// Exemplo com for
+for (int i = 0; i < 5; i++)
+{
+    Console.WriteLine("O valor de i é: " + i);
+}
+
+// Exemplo com while
+int j = 0;
+while (j < 5)
+{
+    Console.WriteLine("O valor de j é: " + j);
+    j++;
+}
+
+4. Strings, Arrays e Listas, Datas:
+
+Concatenação de strings:
+
+string str1 = "hola";
+string str2 = " mundo";
+string mensagem = str1 + str2;
+
+Obter o comprimento da string:
+string nome = "João";
+int comprimento = nome.Length;
+
+Busca de substrings:
+string frase = "O cachorro é amigo do homem.";
+int indice = frase.IndexOf("amigo"); 
+
+
+4.2. Arrays e Listas em C# têm diferenças significativas:
+
+Arrays têm tamanho fixo, enquanto Listas podem crescer dinamicamente
+Arrays podem conter apenas elementos do mesmo tipo, enquanto Listas podem conter elementos de diferentes tipos
+Listas fornecem métodos úteis para adicionar, remover e modificar elementos de forma mais flexível.
+
+Exemplo de Array:
+
+int[] numeros = new int[3] { 1, 2, 3 };
+
+
+Exemplo de Lista:
+
+List<int> numeros = new List<int>();
+numeros.Add(1);
+numeros.Add(2);
+numeros.Add(3);
+
+4.3. Datas em C# são representadas pela estrutura DateTime. Você pode manipular datas de várias maneiras, como obter a data atual, adicionar ou subtrair dias, formatar datas em diferentes estilos
+
+Obtendo dat atual:
+
+DateTime dataAtual = DateTime.Now;
+
+Adicionando dias a Uma data:
+
+DateTime data = DateTime.Now;
+DateTime dataFutura = data.AddDays(7);
+
+
+Formatando como sring:
+
+DateTime data = DateTime.Now;
+string dataFormatada = data.ToString("dd/MM/yyyy");
+
+5. Language Integrated-Query (LINQ):
+
+
+
+5.1. O LINQ é uma tecnologia introduzida no .NET Framework que permite escrever consultas de dados diretamente em C# de uma maneira declarativa.
+
+5.2. Exemplo prático de utilização do LINQ em uma coleção de dados:
+
+using System;
+using System.Linq; 
+
+class Program
+{
+    static void Main()
+    {
+        // Coleção de números
+        int[] numeros = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+
+        // Consulta LINQ para filtrar os números pares
+        var numerosPares = from num in numeros
+                           where num % 2 == 0
+                           select num;
+
+        // Imprimindo os números pares
+        foreach (var num in numerosPares)
+        {
+            Console.WriteLine(num);
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
