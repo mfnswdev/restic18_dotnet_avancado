@@ -106,3 +106,4 @@
 10.3. Dê um exemplo de implementação de uma interface em C#.
     ao fazer entidades que terão CRUD , operações de getById, getAll, create, Update são necessãrias, sendo assim uma interface 'BaseEntity' com a assinatura desses métodos ira padronizar o nome dos métodos e ajudar em trabalhos em equipe.
 
+**lido denis**
