@@ -1,0 +1,118 @@
+2. Sintaxe Básica de C#: Variáveis, Tipos de Dados e Operadores:**
+2.1. Explique a importância das variáveis em C# e forneça um exemplo de declaração.
+Definir as especificidade de como cada dado deve ser comportar, por exemplo, se o dado a ser utilizado é um número inteiro, utilizamos o tipo int, se for um número decimal, o tipo float, então cada caso tem sua necessidade, seja de tipo ou de
+tamanho.
+
+Ex.: 
+
+int tamanho = 10;
+float distancia = 31.2;
+
+2.2. Quais são os tipos de dados básicos em C# e como são utilizados?
+Os tipos básicos são int, float, char e boolean.
+
+int - declaração de números inteiros;
+float - declaração de números de ponto flutuante;
+char - declaração de caracteres;
+boolean - declaração de tipos lógicos, e só pode assumir o valor true e false;
+
+2.3. Dê exemplos de operadores aritméticos e lógicos em C#.
+
+Aritméticos: 
+
+x = y + z;
+x = y - z;
+x = y * z;
+x = y / z;
+x = y % 0;
+
+Lógicos:
+
+x = y && z
+x = y || z
+x = !x
+
+**3. Estruturas de Controle de Fluxo: Condicionais e Loops em C#:**
+3.1. Como as estruturas condicionais são implementadas em C#? Dê um exemplo.
+if(x % 0 == 0) {
+    Console.WriteLine($"{x} é par");
+} else { 
+    Console.WriteLine($"{x} é impar");
+}
+
+
+3.2. Explique o funcionamento dos loops em C# e forneça um exemplo de uso.
+Os loops são estruturas para iterar n vezes, seja essas iterações para os elementos de um Array, ou então para executar
+uma tarefa inúmeros vezes determinadas pelo programador.
+
+for(int i = 0; i < 10; i++) {
+    Console.WriteLine(i);
+}
+
+List<int> numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+foreach(int element int numbers){
+    Console.WriteLine($"{element * 2}");
+}
+
+
+3.3. Qual é a diferença entre o "for" e o "while" em termos de controle de fluxo?
+A principio, ambos podem utilizados de forma similar, porém normalmente quando é necessário uma inicialização e incremento, utiliza-se o for, e para o while ficam estruturas de laço como o exemplo abaixo:
+
+while(x == true) {
+    if(x % 0 == 2) {
+        // instrução qualquer
+    } else {
+      x = false;
+    }
+}
+
+**4. Strings, Arrays e Listas, Datas:**
+4.1. Descreva operações comuns realizadas em strings em C#.
+Split, Replace, Contains, Length, ToLower, ToUpper, Empty...
+
+4.2. Compare e contraste Arrays e Listas em termos de funcionalidade e uso.
+Em geral as listas são mais utilizadas devido a flexibilidade, pois são dinâmicas e dispõe de várias manipulações, porém o Array
+é mais rápido do ponto de vista de eficiência, caso seja necessário.
+
+4.3. Como as datas são representadas e manipuladas em C#? Dê exemplos.
+
+
+**5. Language Integrated-Query (LINQ):**
+5.1. O que é o LINQ e qual é sua finalidade em C#?
+O LINQ é uma funcionalidade do C# que tem como objetivo fazer consultas em estruturas de dados que em alguns pontos essa consultas são similares a consultas SQL.
+
+5.2. Forneça um exemplo prático de utilização do LINQ em uma coleção de dados.
+ArrayUsers.Select((x, index) => x + 2);
+
+5.3. Quais são as vantagens de usar o LINQ em comparação com abordagens convencionais?
+
+
+**6. Debugging e Exceções:**
+6.1. Descreva o processo de debugging em C# e mencione ferramentas úteis.
+6.2. Qual é o papel das exceções em C#? Como são tratadas no código?
+6.3. Dê um exemplo de como utilizar a declaração "try-catch" para lidar com exceções.
+
+
+**7. Conceitos de POO em C#:**
+7.1. Explique o que é Programação Orientada a Objetos (POO) e sua importância em C#.
+7.2. Quais são os pilares da POO? Descreva cada um brevemente.
+7.3. Dê um exemplo prático de como um objeto é criado em C#.
+
+
+**8. Encapsulamento, Construtores e Destrutores:**
+8.1. Por que o encapsulamento é considerado importante na Programação Orientada a Objetos?
+8.2. Explique a função dos construtores e destrutores em uma classe C#.
+8.3. Como você implementaria um construtor em uma classe?
+
+
+**9. Herança e Polimorfismo:**
+9.1. O que é herança em C# e como ela é aplicada?
+9.2. Explique o conceito de polimorfismo e forneça um exemplo prático.
+9.3. Quais são as vantagens da herança e do polimorfismo na programação orientada a objetos?
+
+
+**10. Classes Abstratas e Interfaces:**
+10.1. Qual é a diferença entre uma classe abstrata e uma interface em C#?
+10.2. Em que cenários você optaria por usar uma classe abstrata em vez de uma interface?
+10.3. Dê um exemplo de implementação de uma interface em C#.
