@@ -1,0 +1,156 @@
+Nome: Víctor Souza Moreira Quirino
+
+2.1 As variáveis são importantes para armazenar temporariamente um dado que pode ser manipulado por um método ou estruturas de repetição e condição.
+    Podem ser utilizadas como retorno de métodos e passados para funções que irão exibir alguma informação para o usuário.
+2.2 int: Para armazenar valores inteiros.
+    double: Para armazenar valores de ponto flutuante.
+    char: Para armazenar um caractere.
+2.3 Operadores aritiméticos:
+    Soma:
+        int x = 10;
+        int y = 5;
+        int z = x + y;
+    Subtração:
+        int w = x -y;
+    Multiplicação:
+        int v = x * y;
+    Divisão:
+        int h = x / y;
+    Maior que / Maior ou igual a que:
+        if(x > y) { }
+        if(x >= y) { }
+    Menor que / Menor ou igual a que:
+        if(x < y) { }
+        if(x <= y) { }
+    Igualdade:
+        if(x == y) { }
+    Diferença:
+        if(x != y) { }
+    Operadores lógicos:
+    E:
+        if(x > y && x >= 0)
+    Ou:
+        if(x < y || x == 0)
+
+3.1 Uma determinada condição precisa ser alcançada para que o bloco de código subsequente seja executado
+    Implementação:
+        int x = 0;
+        int y = 1;
+        if(x < y) { Console.WriteLine("Eh menor!); }
+3.2 Um loop é um bloco de código que é executado múltiplas vezes até que uma condição seja alcançada.
+    int x = 10;
+    while(x > 0)
+    {
+        x--;
+        Console.WriteLine($"X agora vale {x}...");
+    }
+3.3 Uma estrutura "for" encerra o fluxo quando algum valor atribuído a uma variável que controla esse fluxo é alcançado. 
+    A iteração com essa variável é feita fora do bloco de código. Já o while faz a atribuição dentro do bloco de código.
+
+4.1 Um objeto string é imutável. Após ter seu valor atribuído é impossível alterar sem criar outra instância de objeto.
+    Para manipular uma string de forma mais prática é possível utilizar um StringBuilder.
+4.2 Um Array ocupa menos espaço na memória e possui menos métodos de manipulação. 
+    Já uma List ocupa mais espaço mas suporta mais métodos para manipulação.
+4.3 Pode ser representada com o tipo DateTime, entre outros.
+    Exemplo:
+        DateTime data = DateTime.Now(); // Instancia um objeto Date com a data atual do sistema.
+        data.AddMinutes(1.0) //Adiciona um minuto à data.
+
+5.1 LINQ são um conjunto de métodos de consultas integradas ao .NET para utilizar em coleções.
+5.2 Exemplo: Buscando um usuário em uma coleção com um id específico;
+    int userId = 1;
+    var user = context.Users.Where(u => u.id == userId).FirstOrDefault();
+5.3 Mais praticidade na escrita de código. Pode combinar métodos para executar querys mais complexas.
+
+6.1 Não conheço.
+6.2 As exceções servem para indicar que houve um erro durante a execução da aplicação. São tratadas sendo capturadas em blocos try-catch
+    Também é possível criar exceções personalizadas para capturar comportamentos específicos da aplicação.
+6.3 Exemplo:
+    private Client GetReferenceById(int id)
+    {
+        var client = _context.Clients.Find(id);
+
+        if (client is null || !client.Active) throw new ClientNotFoundException(id);
+
+        return client;
+    }
+
+7.1 Programação oriendata a objetos é um paradigma de programação que visa representar entidades do mundo real dentro do código.
+    É importante para a linguagem C# visto que é um paradigma altamente consolidado no mundo do desenvolvimento de software.
+7.2 Encapsulamento: É o conceito de proteger os atributos de uma classe de modo que as classes externas só tenham acesso ao necessário.
+    Herança: Uma classe pode herdar características(propriedadedes) e comportamentos(métodos) de outra classe, podendo alterar estender e 
+    modificar esses comportamentos.
+    Polimorfismo: Objetos de classes diferentes que herdam da mesma classe base podem ser tratados de maneira diferentes de acordo com a 
+    implementação de métodos comuns.
+7.3 var client = new Client 
+    {
+        Name = "Maria",
+        Email = "maria@email.com"
+    };
+    Um objeto da classe Client é criado chamando o operador new seguido do nome da classe e com atribuição direta dos atributos.
+
+8.1 Para garantir segurança de acesso à dados e métodos de classes, flexibilidade e manutenabilidade do código.
+8.2 O construtor estancia um objeto e aloca espaço na memória para ser utilizado pelo objeto. Um destrutor libera o espaço que o objeto estava utilizando.
+8.3 class Client
+    {
+        string _name;
+
+        public Client() { }
+
+        public Client(string name)
+        {
+            _name = name;
+        }
+    }
+
+9.1 A herança é a possibilidade de uma classe estender e modificar o comportamento de classes base.
+9.2 Polimorfismo é a capacidade de objetos de classes diferentes herdarem da mesma classe base e ter comportamento diferente para determinados mpetodos comuns.
+    EXEMPLO:
+    public class Forma 
+    {
+        public virtual void Desenhar()
+        {
+            Console.WriteLine("Desenhando forma genérica);
+        }
+    }
+
+    public class Circulo : Forma
+    {
+        public override void Desenhar()
+        {
+            Console.WriteLine("Desenhando circulo");
+        }
+    }
+
+    public class Triangulo : Forma
+    {
+        public override void Desenhar()
+        {
+            Console.WriteLine("Desenhando triangulo");
+        }
+    }
+9.3 O código tem mais flexibilidade, evita repetição de código e tem melhor manutenabilidade.
+
+10.1 Uma classe abstrata é uma classe que não pode ser instanciada e pode ou não ter métodos implementados.
+    Uma interfacec é um contrato que deve ser seguido pela classe que a implementa. Dessa forma toda classe que
+    implementa uma interface é obrigada a implementar todos os métodos que ela contém, ja uma classe que herda de
+    uma classe abstrata não é obrigado a implementar todos os métodos que ela contém, a não ser que todos tenham
+    a assinatura virtual.
+10.2 Optaria para implementar uma classe com propriedades comuns a mais de um tipo de entidade do domínio da aplicação.
+10.3 
+    public interface ISecurityService
+    {
+        public string HashPassword(string password);
+    }
+
+    public class SecurityService : ISecurityService
+    {
+        public string HashPassword(string password)
+        {
+            var hashedBytes = SHA256.HashData(Encoding.UTF8.GetBytes((password)));
+            var hash = BitConverter.ToString(hashedBytes).Replace("-", "").ToLower();
+            return hash;
+        }
+    }
+
+
