@@ -1,8 +1,3 @@
-<style>
-  h1{color:red}
-  h2{color:lightgreen}
-</style>
-
 <h1>Aluno: Brendom Victor Gama Gonçalves</h1>
 
 <h2>2. Sintaxe Básica de C#: Variáveis, Tipos de Dados e Operadores:</h2>
@@ -20,12 +15,12 @@
   > <code>float pi = 3,14159265;</code>
 - 2.3. Dê exemplos de operadores aritméticos e lógicos em C#.
 
-  > +, -, /, *, ==, !=, !<br>
+  > <code>+, -, /, *, ==, !=, !</code><br>
   > <code>int soma = 4 + 5;</code><br>
   > <code>int subtracao = 4 - 5</code><br>
   > <code>float divisao = 6 / 3</code><br>
-  > <code>boolean primeiraCondicao = soma == subtracao;</code>
-  > <code>boolean segundaCondicao = soma != subtracao;</code>
+  > <code>boolean primeiraCondicao = soma == subtracao;</code><br>
+  > <code>boolean segundaCondicao = soma != subtracao;</code><br>
   > <code>boolean terceiraCondicaoContraria = !(soma == subtracao);</code>
 
 <h2>3. Estruturas de Controle de Fluxo: Condicionais e Loops em C#:</h2>
@@ -40,9 +35,12 @@
   > Os loops funcionam a a partir de uma condição verdadeira/falsa imposta no bloco após o "while" e "do-while", já o "for" utiliza contadores para percorrer determina estrutura ou contar repetições.<br>
   > <code>boolean condicaoRepeticao = true;</code><br>
   > <code>int contadorRepeticao = 1;</code><br>
-  > <code>while(condicaoRepeticao) System.Console.WriteLine("Repetir infinitamente");</code><br>
-  > <code>do{<br></t>&nbsp;&nbsp;&nbsp;contadorRepeticao++;<br>}while(contadorRepeticao == 10);</code><br>
+  > <code>while(condicaoRepeticao) System.Console.WriteLine("Repetir infinitamente");</code><br><br>
+  > <code>do{</code><br>
+  > <code>&nbsp;&nbsp;&nbsp;contadorRepeticao++;</code><br>
+  > <code>}while(contadorRepeticao == 10);</code><br><br>
   > <code>for(int i=1;i<=10;i++){<br>&nbsp;&nbsp;&nbsp;Console.WriteLine(i);<br>}</code><br>
+
 - 3.3. Qual é a diferença entre o "for" e o "while" em termos de controle de fluxo?
 
   > O <code>for</code> trabalha com controle de variável e o <code>while</code> com condições;
@@ -75,7 +73,7 @@
 - 5.2. Forneça um exemplo prático de utilização do LINQ em uma coleção de dados.
 
   > <code>int[] idades = [10, 35, 47, 18, 9, 12]</code><br>
-  > <code>int[] menoresDeIdade = <br></code>
+  > <code>int[] menoresDeIdade = </code><br>
   > <code>&nbsp;&nbsp;&nbsp;from idade in idades</code><br>
   > <code>&nbsp;&nbsp;&nbsp;where idade < 18</code><br>
   > <code>&nbsp;&nbsp;&nbsp;select idade;</code>
@@ -100,7 +98,7 @@
   > <code>&nbsp;&nbsp;&nbsp;if(num2 ==  0) throw new Exception("Não podemos dividir por 0.");</code><br>
   > <code>&nbsp;&nbsp;&nbsp;return num1 / num2;</code><br>
   > <code>}</code><br>
-  > <code>try{<br></code>
+  > <code>try{</code><br>
   > <code>&nbsp;&nbsp;&nbsp;float resultado = DivisaoZero(10, 0);</code><br>
   > <code>} catch (Exception e){</code><br>
   > <code>&nbsp;&nbsp;&nbsp;System.Console.WriteLine(e.Message);</code><br>
@@ -153,7 +151,7 @@
   > <code>public class Pessoa {<br></code>
   > <code>&nbsp;&nbsp;&nbsp;Propriedades e Métodos da classe</code><br>
   > <code>}</code><br><br>
-  > <code>public class Professor : Pessoa {<br></code>
+  > <code>public class Professor : Pessoa {</code><br>
   > <code>&nbsp;&nbsp;&nbsp;Propriedades e Métodos da classe Professor</code><br>
   > <code>}</code>
 
@@ -171,7 +169,8 @@
   > <code>public class Gato : Animal {</code><br>
   > <code>&nbsp;&nbsp;&nbsp;public override void EmitirSom(){</code><br>
   > <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Console.WriteLine("O gato mia.");</code><br>
-  > <code>&nbsp;&nbsp;&nbsp;}<br>}</code>
+  > <code>&nbsp;&nbsp;&nbsp;}<br></code>
+  > <code>}</code>
 
 - 9.3. Quais são as vantagens da herança e do polimorfismo na programação orientada a objetos?
 
@@ -195,4 +194,5 @@
   > <code>public class Passaro : IVoador {</code><br>
   > <code>&nbsp;&nbsp;&nbsp;public void Voar(){</code><br>
   > <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Console.WriteLine("O passaro está voando.");</code><br>
-  > <code>&nbsp;&nbsp;&nbsp;}<br>}</code>
+  > <code>&nbsp;&nbsp;&nbsp;}<br></code>
+  > <code>}</code>
