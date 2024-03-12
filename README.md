@@ -94,7 +94,7 @@
 
 - 6.3. Dê um exemplo de como utilizar a declaração "try-catch" para lidar com exceções.
 
-  > <code>public float DivisaoZero (float num1, float num2){<br></code>
+  > <code>public float DivisaoZero (float num1, float num2){</code><br>
   > <code>&nbsp;&nbsp;&nbsp;if(num2 ==  0) throw new Exception("Não podemos dividir por 0.");</code><br>
   > <code>&nbsp;&nbsp;&nbsp;return num1 / num2;</code><br>
   > <code>}</code><br>
@@ -134,7 +134,7 @@
 
 - 8.3. Como você implementaria um construtor em uma classe?
 
-  > <code>public class Pessoa{<br></code>
+  > <code>public class Pessoa{</code><br>
   > <code>&nbsp;&nbsp;&nbsp;private String Nome {get;set}</code><br>
   > <code>&nbsp;&nbsp;&nbsp;private String Sobrenome {get;set}</code><br>
   > <code>&nbsp;&nbsp;&nbsp;public Pessoa(String _nome, String _sobrenome){</code><br>
@@ -148,7 +148,7 @@
 - 9.1. O que é herança em C# e como ela é aplicada?
 
   > Herança é uma forma de permitir que uma classe herde as características e métodos de outra classe, Tornando mais prático e menos repetitivo o uso das propriedades.<br>
-  > <code>public class Pessoa {<br></code>
+  > <code>public class Pessoa {</code><br>
   > <code>&nbsp;&nbsp;&nbsp;Propriedades e Métodos da classe</code><br>
   > <code>}</code><br><br>
   > <code>public class Professor : Pessoa {</code><br>
@@ -161,15 +161,17 @@
   > <code>public class Animal {</code><br>
   > <code>&nbsp;&nbsp;&nbsp;public virtual void EmitirSom() {</code><br>
   > <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Console.WriteLine("O animal emite um som.");</code><br>
-  > <code>&nbsp;&nbsp;&nbsp;}<br>}</code><br>
+  > <code>&nbsp;&nbsp;&nbsp;}</code><br>
+  > <code>}</code><br>
   > <code>public class Cachorro : Animal {</code><br>
   > <code>&nbsp;&nbsp;&nbsp;public override void EmitirSom(){</code><br>
   > <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Console.WriteLine("O cachorro late.");</code><br>
-  > <code>&nbsp;&nbsp;&nbsp;}<br>}</code><br>
+  > <code>&nbsp;&nbsp;&nbsp;}</code><br>
+  > <code>}</code><br>
   > <code>public class Gato : Animal {</code><br>
   > <code>&nbsp;&nbsp;&nbsp;public override void EmitirSom(){</code><br>
   > <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Console.WriteLine("O gato mia.");</code><br>
-  > <code>&nbsp;&nbsp;&nbsp;}<br></code>
+  > <code>&nbsp;&nbsp;&nbsp;}</code><br>
   > <code>}</code>
 
 - 9.3. Quais são as vantagens da herança e do polimorfismo na programação orientada a objetos?
@@ -194,5 +196,5 @@
   > <code>public class Passaro : IVoador {</code><br>
   > <code>&nbsp;&nbsp;&nbsp;public void Voar(){</code><br>
   > <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Console.WriteLine("O passaro está voando.");</code><br>
-  > <code>&nbsp;&nbsp;&nbsp;}<br></code>
+  > <code>&nbsp;&nbsp;&nbsp;}</code><br>
   > <code>}</code>
