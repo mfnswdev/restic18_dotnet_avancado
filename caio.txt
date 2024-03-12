@@ -1,0 +1,219 @@
+2. Sintaxe Básica de C#: Variáveis, Tipos de Dados e Operadores:**
+2.1. Explique a importância das variáveis em C# e forneça um exemplo de declaração.
+
+ R:  Armazenar valores com tipos definidos. 
+     Exemplo:
+     string texto; //Declaração de uma variavel do tipo string
+     
+2.2. Quais são os tipos de dados básicos em C# e como são utilizados?
+
+ R:  bool b // Booleano
+     int i // Números inteiros
+     char c // Caracter
+     string s //Cadeira de caracter 
+     double d // Ponto flutuante de maior precisão
+     decimal dec // Ponto flutuante
+     DateTime Date // Datas
+     
+ 
+2.3. Dê exemplos de operadores aritméticos e lógicos em C#.
+
+ R:  Lógicos: && (e), || (ou), == (igual)...
+     Aritméticos: + (soma), - (subtração), * (multiplicação), / (divisão), % (resto)...
+
+**3. Estruturas de Controle de Fluxo: Condicionais e Loops em C#:**
+3.1. Como as estruturas condicionais são implementadas em C#? Dê um exemplo.
+
+  R: Estrutura condicionais no C# é feita por meio de estrutura de controle if e else.
+     Há também a estrutura de switch, mais utilizada para menus.
+     
+     if(condição){
+     	//executa
+     }else{ //se não
+     	//executa
+     }
+
+3.2. Explique o funcionamento dos loops em C# e forneça um exemplo de uso.
+
+  R: Executam determinado trecho de código n vezes mediante uma condição verdadeira.
+     while(condição){
+     	//executa
+     }
+	
+     for(int i = 0; i == 10; i++){ //A cada iteração o valor de i é incrementado até ser igual à 10
+     	//executa
+     }
+	
+3.3. Qual é a diferença entre o "for" e o "while" em termos de controle de fluxo?
+  
+  R: For funciona em função de um iterador, normalmente um inteiro, para execução de sua lógica,
+     sendo melhor para trabalhar com estruturas de índices como listas.
+     While funciona em função de uma condição, normalmente lógica, para execução de determinada lógica.
+
+
+**4. Strings, Arrays e Listas, Datas:**
+4.1. Descreva operações comuns realizadas em strings em C#.
+  
+  R: Operações de concatenação, busca de substrings, remoção de substrings, etc.
+  
+4.2. Compare e contraste Arrays e Listas em termos de funcionalidade e uso.
+  
+  R: Arrays possui tamanho fixo, Listas são possuem tamanhos dinâmicos
+  
+4.3. Como as datas são representadas e manipuladas em C#? Dê exemplos.
+
+  R: Com a declaração da tipagem DateTime, disponibilizando uma interfaces com vários métodos de manipulação de datas.
+  
+     DateTime data = DateTime.Parse(“21/01/2008”); //Casting do tipo string para instanciar uma variável do tipo DateTime
+
+**5. Language Integrated-Query (LINQ):**
+5.1. O que é o LINQ e qual é sua finalidade em C#?
+  
+  R: Estrutura que auxilia na manipulação (consulta, criação, deleção, atualização, etc) de uma coleção de dados.
+
+5.2. Forneça um exemplo prático de utilização do LINQ em uma coleção de dados.
+
+     var nomes = new List<string> { "João", "Maria", "Carlos", "Ana", "Pedro", "Isabel" };
+
+     var nomesComMaisDeCincoCaracteres = nomes.Where(nome => nome.Length > 5);
+
+     foreach (var nome in nomesComMaisDeCincoCaracteres)
+     {
+         Console.WriteLine(nome);
+     }
+
+5.3. Quais são as vantagens de usar o LINQ em comparação com abordagens convencionais?
+
+  R: Performance e Facilidade de uso
+
+**6. Debugging e Exceções:**
+6.1. Descreva o processo de debugging em C# e mencione ferramentas úteis.
+  
+  R: O processo de debugging permite que executemos nosso código com objetivo de reparar possíveis bugs.
+     Como ferramenta é possivel analisar as variaveis em determinados estados utilizando de breakpoints e
+     avançar/retroceder a execução do programa.
+
+6.2. Qual é o papel das exceções em C#? Como são tratadas no código?
+
+  R: Tratar erros para que nosso sistema funcione de forma mais confiavel.
+     Utilizando a palavra definida "throw" é possível lançar uma nova exceção.
+
+6.3. Dê um exemplo de como utilizar a declaração "try-catch" para lidar com exceções.
+
+     try
+     {
+         Console.Write("Digite um número: ");
+         string input = Console.ReadLine();
+         int numero = int.Parse(input);
+         Console.WriteLine($"Número digitado: {numero}");
+        }
+     catch (FormatException ex)
+     {
+	throw new Exception("Erro: Por favor, digite um número válido.");
+     }
+
+
+**7. Conceitos de POO em C#:**
+7.1. Explique o que é Programação Orientada a Objetos (POO) e sua importância em C#.
+
+  R: Um paradigma de programação que conceitua o mundo real em uma modelagem abstrata,
+     construindo modelos (classes) para instanciação de objetos, com atributos (caracteristica) e métodos (ação),
+     e relacionando esses modelos.
+
+
+7.2. Quais são os pilares da POO? Descreva cada um brevemente.
+
+  R: Polimorfismo: Possibilidade de uma classe/método se comportar de várias formas.
+     Herança: Possibilidade de criar uma classe baseada em uma existente.
+     Encapsulamento: Privar metodos e atributos e disponibilizar uma interface confiavel apra obtenção e atualização desses atributos/métodos.
+
+7.3. Dê um exemplo prático de como um objeto é criado em C#.
+
+  R: Pessoa pessoa1 = new Pessoa("Caio", 27);
+
+**8. Encapsulamento, Construtores e Destrutores:**
+8.1. Por que o encapsulamento é considerado importante na Programação Orientada a Objetos?
+
+  R: Pois a implementação do encapsulamento garante muitas vantagens como: segurança, ocultação da implementação e facilidade de manutenção,
+
+8.2. Explique a função dos construtores e destrutores em uma classe C#.
+
+  R: Construtures são métodos que são executados durante a inicialização de um novo objeto.
+     Destrutores são métodos que são executados durante a exclusão de um objeto durante o garbage collector.
+
+8.3. Como você implementaria um construtor em uma classe?
+
+  R: class Exemplo
+     {
+    	 public Exemplo()
+    	 {
+    	 }
+
+    	 public Exemplo(int valor)
+    	 {
+    	 }
+     }
+
+**9. Herança e Polimorfismo:**
+9.1. O que é herança em C# e como ela é aplicada?
+
+  R: Herança: Possibilidade de criar uma classe baseada em uma existente.
+     A classe filho herda os métodos e atributos da classe pai.
+
+9.2. Explique o conceito de polimorfismo e forneça um exemplo prático.
+
+  R: Polimorfismo: Possibilidade de uma classe/método se comportar de várias formas.
+
+class Animal
+{
+    public virtual void EmitirSom()
+    {
+        Console.WriteLine("Som genérico de animal");
+    }
+}
+
+class Gato : Animal
+{
+    public override void EmitirSom()
+    {
+        Console.WriteLine("Miau!");
+    }
+}
+
+class Cachorro : Animal
+{
+    public override void EmitirSom()
+    {
+        Console.WriteLine("Au au!");
+    }
+}
+
+9.3. Quais são as vantagens da herança e do polimorfismo na programação orientada a objetos?
+
+  R:  Flexibilidade, reutilização de código, facilitando o design de sistemas complexos.
+
+**10. Classes Abstratas e Interfaces:**
+10.1. Qual é a diferença entre uma classe abstrata e uma interface em C#?
+
+  R:  Uma classe abstrata é uma classe que não pode ser instanciada. Ela serve como um modelo para outras classes.
+      Uma interface é um contrato que define um conjunto de métodos e propriedades que uma classe deve implementar.
+
+10.2. Em que cenários você optaria por usar uma classe abstrata em vez de uma interface?
+   
+   R: Quando eu quiser uma implementação base eu utilizo a classe abstrata.
+
+10.3. Dê um exemplo de implementação de uma interface em C#.
+
+   R: 
+	public interface IExemplo
+	{
+    		void Executar();
+	}
+
+	public class Exemplo : IExemplo
+	{
+    		public void Executar()
+    		{
+        		Console.WriteLine("Método Executar() chamado na classe Exemplo.");
+    		}
+'	}
