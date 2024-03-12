@@ -1,0 +1,264 @@
+
+Questionario
+
+
+2.	Variáveis, Tipos de Dados e Operadores:
+
+2.1 Importância das Variáveis em C#: As variáveis são fundamentais em C# porque permitem armazenar e manipular dados durante a execução do programa. Elas representam valores que podem ser modificados e utilizados em cálculos e operações.
+Exemplo de Declaração de Variável em C#: Aqui está um exemplo de declaração de variável em C#:
+
+    int idade; // Declaração de uma variável chamada "idade" do tipo inteiro
+    idade = 30; // Atribuição de um valor à variável
+
+
+2.2	Tipos de Dados Básicos em C#:
+
+Os tipos de dados básicos em C# incluem:
+
+    •	int: Representa números inteiros.
+    •	double: Representa números de ponto flutuante (com casas decimais).
+    •	char: Representa caracteres individuais.
+    •	bool: Representa valores booleanos (verdadeiro ou falso).
+
+Esses tipos de dados são usados para declarar variáveis e armazenar diferentes tipos de informações.
+
+2.3	 Operadores Aritméticos e Lógicos em C#:
+
+Operadores Aritméticos:
+
+    +, -, *, /: Realizam operações de adição, subtração, multiplicação e divisão, respectivamente.
+    %: Calcula o resto da divisão.
+
+Operadores Lógicos:
+
+    && (AND), || (OR), ! (NOT): Realizam operações lógicas entre expressões booleanas.
+
+    Exemplo:
+
+        int a = 10;
+        int b = 5;
+        bool resultado = (a > b) && (b != 0); // true
+
+
+3	Estruturas de Controle de Fluxo: Condicionais e Loops em C#:
+
+3.1	Estruturas Condicionais (Exemplo):
+
+    int numero = 15;
+    if (numero > 10)
+    {
+       Console.WriteLine("O número é maior que 10.");
+    }
+    else
+    {
+        Console.WriteLine("O número não é maior que 10.");
+    }
+
+3.2	Loops (Exemplo):
+
+    for (int i = 0; i < 5; i++)
+    {
+        Console.WriteLine($"Iteração {i}");
+    }
+
+3.3	 Diferença entre “for” e “while”: O “for” é usado quando o número de iterações é conhecido antecipadamente, enquanto o “while” é usado quando a condição de parada pode variar durante a execução.
+
+4	Strings, Arrays e Listas, Datas:
+
+4.1	 Operações comuns em Strings:
+
+    Concatenação: string nomeCompleto = primeiroNome + " " + sobrenome;
+    Tamanho: int tamanho = nomeCompleto.Length;
+
+4.2	 Arrays vs. Listas:
+
+    Arrays têm tamanho fixo, enquanto Listas podem crescer dinamicamente.
+    Exemplo de Array: int[] numeros = new int[5];
+    Exemplo de Lista: List<string> nomes = new List<string>();
+
+4.3	 Datas em C#:
+
+Representadas pelo tipo DateTime.
+
+    Exemplo:
+
+        DateTime dataAtual = DateTime.Now;
+        Console.WriteLine($"Data atual: {dataAtual}");
+
+
+5	Language Integrated-Query (LINQ):
+
+5.1	 O que é o LINQ: O LINQ é uma tecnologia que permite consultas em coleções de dados (como Listas, Arrays, etc.) de forma elegante e eficiente.
+
+5.2	 Exemplo de Uso do LINQ:
+
+    List<int> numeros = new List<int> { 1, 2, 3, 4, 5 };
+    var numerosPares = numeros.Where(n => n % 2 == 0);
+
+5.3	 Vantagens do LINQ:
+
+Clareza do código.
+Reutilização de consultas.
+Integração com outras tecnologias (banco de dados, XML, etc.).
+
+6. Debugging e Exceções:
+
+6.1	 Processo de Debugging em C#: O processo de debugging em C# envolve identificar e corrigir erros (bugs) no código. Aqui estão os passos básicos:
+
+    •	Colocar Pontos de Interrupção (Breakpoints): No Visual Studio, você pode definir pontos de interrupção em linhas específicas do código. Quando o programa atinge esses pontos, a execução é pausada, permitindo que você examine variáveis, valores e fluxo de execução.
+    •	Executar o Programa com o Debugger Anexado: Inicie o programa no modo de depuração (pressionando F5 ou clicando no botão “Iniciar Depuração”). O Visual Studio executará o código e pausará nos pontos de interrupção.
+    •	Analisar Variáveis e Estado do Programa: Use as janelas de variáveis, pilha de chamadas e saída para examinar os valores das variáveis e entender o fluxo do programa.
+    •	Passar pelo Código Passo a Passo: Use os comandos de passo (F10 para passo único, F11 para entrar em métodos) para percorrer o código linha por linha e observar como as variáveis mudam.
+    •	Corrigir Problemas Identificados: Com base nas informações coletadas durante a depuração, faça as correções necessárias no código.
+
+6.2  Ferramentas Úteis para Debugging em C#:
+
+    •	Visual Studio: A IDE Visual Studio oferece uma ampla gama de recursos de depuração, incluindo janelas de variáveis, pilha de chamadas, inspetor de objetos e muito mais.
+    •	dnSpy: Uma ferramenta de decompilação e depuração que permite depurar qualquer assembly .NET, mesmo sem símbolos ou código-fonte. É útil para depurar código de terceiros ou em ambientes de produção.
+    •	Process Explorer: Uma ferramenta do Windows que fornece informações detalhadas sobre processos em execução, incluindo módulos carregados, alças e criação de despejos de memória.
+
+6.3  Exceções em C#:
+
+    •	As exceções são eventos anormais que ocorrem durante a execução do programa, como divisão por zero, acesso a índices inválidos em arrays, etc.
+    •	Em C#, as exceções são tratadas usando blocos “try-catch”. O código suscetível a exceções é colocado dentro do bloco “try”, e o código de tratamento é colocado dentro do bloco “catch”.
+    •	Exemplo de uso do “try-catch”:
+        
+        try
+        {
+            int resultado = 10 / 0; // Isso lançará uma exceção
+        }
+        catch (DivideByZeroException ex)
+        {
+            Console.WriteLine($"Erro: {ex.Message}");
+        }
+
+7. Conceitos de POO em C#:
+
+7.1	Programação Orientada a Objetos (POO):
+
+    •	A POO é um paradigma de programação que se baseia na criação e manipulação de objetos.
+    •	Ela organiza o código em classes e objetos, promovendo a reutilização, modularidade e manutenção.
+    •	Em C#, POO é fundamental para criar aplicativos escaláveis e bem estruturados.
+
+7.2 Pilares da POO:
+
+    •	Encapsulamento: Oculta os detalhes internos de uma classe e expõe apenas o necessário. Protege os dados e comportamentos da classe.
+    •	Herança: Permite criar novas classes com base em classes existentes. Herda propriedades e métodos da classe pai.
+    •	Polimorfismo: Permite que objetos de diferentes classes sejam tratados de maneira uniforme. Pode ser alcançado por meio de herança e interfaces.
+
+7.3 Exemplo Prático de Criação de Objeto em C#:
+
+    class Pessoa
+    {
+        public string Nome { get; set; }
+        public int Idade { get; set; }
+    }
+
+    // Criando um objeto da classe Pessoa
+
+    Pessoa pessoa1 = new Pessoa();
+    pessoa1.Nome = "Alice";
+    pessoa1.Idade = 30;
+
+8. Encapsulamento, Construtores e Destrutores:
+
+8.1 Importância do Encapsulamento:
+
+    •	O encapsulamento é considerado crucial na Programação Orientada a Objetos (POO) por várias razões:
+    •	Ocultação de Detalhes Internos: O encapsulamento permite ocultar os detalhes internos de uma classe, expondo apenas o necessário para o mundo exterior. Isso protege os dados e comportamentos da classe, evitando acesso não autorizado ou modificações indevidas.
+    •	Manutenção e Evolução: Ao encapsular os detalhes de implementação, você pode alterar a implementação interna de uma classe sem afetar o código que a utiliza. Isso facilita a manutenção e evolução do software.
+    •	Promoção da Integridade dos Dados: Definir campos como privados e fornecer métodos públicos para acessá-los permite controlar como os dados são manipulados, garantindo a integridade dos dados.
+
+8.2 Função dos Construtores e Destrutores:
+
+    •	Construtores: São métodos especiais chamados automaticamente quando uma instância de uma classe é criada. Eles inicializam os membros da classe e configuram o estado inicial do objeto. Os construtores permitem definir valores padrão, limitar a instanciação e criar objetos flexíveis.
+    •	Destrutores: Também conhecidos como finalizadores, os destrutores são chamados quando um objeto é destruído (geralmente quando ele sai do escopo). Eles liberam recursos não gerenciados, como conexões de banco de dados ou arquivos abertos.
+
+8.3 Implementação de um Construtor em C#:
+
+    •	Um construtor é um método com o mesmo nome da classe. Sua assinatura inclui apenas um modificador de acesso opcional, o nome do método e sua lista de parâmetros. Ele não possui tipo de retorno.
+    •	Exemplo de uma classe Pessoa com um construtor que recebe o sobrenome e o nome:
+
+    public class Pessoa
+    {
+        private string sobrenome;
+        private string nome;
+
+        public Pessoa(string sobrenome, string nome)
+        {
+            this.sobrenome = sobrenome;
+            this.nome = nome;
+        }
+        // Outros membros da classe...
+    }
+
+9. Herança e Polimorfismo:
+
+9.1 Herança em C#:
+
+    •	A herança permite criar novas classes que reutilizam, estendem ou modificam o comportamento definido em outras classes (a classe base).
+    •	Uma classe derivada herda os membros (atributos e métodos) da classe base e pode adicionar seus próprios membros.
+    •	Exemplo: Uma classe Círculo derivada da classe base Forma.
+
+
+9.2 Polimorfismo em C#:
+    •	O polimorfismo permite tratar objetos de diferentes classes de maneira uniforme.
+    •	Exemplo prático:
+
+    public class Forma
+    {
+        public virtual void Desenhar()
+        {
+            Console.WriteLine("Desenhando forma genérica");
+        }
+    }
+
+    public class Circulo : Forma
+    {
+        public override void Desenhar()
+        {
+            Console.WriteLine("Desenhando um círculo");
+        }
+    }
+
+    // Uso polimórfico:
+    Forma forma = new Circulo();
+    forma.Desenhar(); // Chama o método Desenhar do círculo
+
+9.3 Vantagens da Herança e Polimorfismo:
+
+    •	Herança:
+    •	Reutilização de código.
+    •	Consistência e padronização.
+    •	Extensibilidade.
+    •	Polimorfismo:
+    •	Flexibilidade e extensibilidade.
+    •	Tratamento uniforme de objetos de diferentes classes.
+    •	Redução de duplicação de código.
+
+10. Classes Abstratas e Interfaces:
+
+10.1 Diferença entre Classe Abstrata e Interface em C#:
+
+    •	Classe Abstrata:
+    •	Pode conter métodos completos ou incompletos.
+    •	Pode ter campos, construtores ou destrutores e aplicar propriedades.
+    •	É usada como uma superclasse para ser herdada por outras classes.
+    •	Força a hierarquia para todas as subclasses.
+    •	Interface:
+    •	Não é considerada uma classe, mas uma entidade.
+    •	Contém apenas a assinatura de métodos (sem corpo ou implementação).
+    •	Todos os métodos são abstratos.
+    •	Funciona como um “contrato” que especifica os métodos e propriedades que as classes que a implementam devem fornecer.
+
+10.2 Cenários para Usar Classe Abstrata ou Interface:
+
+    •	Classe Abstrata:
+    •	Quando você deseja fornecer uma implementação parcial de métodos que pode ser usada por classes derivadas.
+    •	Quando há uma relação “é um tipo de” entre a classe abstrata e suas subclasses.
+    •	Para forçar uma hierarquia consistente.
+    •   Interface:
+    •	Quando você deseja especificar um contrato que as classes devem seguir sem se preocupar com a implementação.
+    •	Quando você precisa implementar heranças múltiplas (já que C# não suporta heranças múltiplas de classes).
+
+
