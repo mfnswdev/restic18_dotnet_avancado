@@ -1,0 +1,15 @@
+/home/matheus-fonseca-nascimento/Documentos/Workspace/DOTNET Avancado/restic18_dotnet_avancado/dotnet_avancado_exercicio1/bin/Debug/net7.0/dotnet_avancado_exercicio1
+/home/matheus-fonseca-nascimento/Documentos/Workspace/DOTNET Avancado/restic18_dotnet_avancado/dotnet_avancado_exercicio1/bin/Debug/net7.0/dotnet_avancado_exercicio1.deps.json
+/home/matheus-fonseca-nascimento/Documentos/Workspace/DOTNET Avancado/restic18_dotnet_avancado/dotnet_avancado_exercicio1/bin/Debug/net7.0/dotnet_avancado_exercicio1.runtimeconfig.json
+/home/matheus-fonseca-nascimento/Documentos/Workspace/DOTNET Avancado/restic18_dotnet_avancado/dotnet_avancado_exercicio1/bin/Debug/net7.0/dotnet_avancado_exercicio1.dll
+/home/matheus-fonseca-nascimento/Documentos/Workspace/DOTNET Avancado/restic18_dotnet_avancado/dotnet_avancado_exercicio1/bin/Debug/net7.0/dotnet_avancado_exercicio1.pdb
+/home/matheus-fonseca-nascimento/Documentos/Workspace/DOTNET Avancado/restic18_dotnet_avancado/dotnet_avancado_exercicio1/obj/Debug/net7.0/dotnet_avancado_exercicio1.csproj.AssemblyReference.cache
+/home/matheus-fonseca-nascimento/Documentos/Workspace/DOTNET Avancado/restic18_dotnet_avancado/dotnet_avancado_exercicio1/obj/Debug/net7.0/dotnet_avancado_exercicio1.GeneratedMSBuildEditorConfig.editorconfig
+/home/matheus-fonseca-nascimento/Documentos/Workspace/DOTNET Avancado/restic18_dotnet_avancado/dotnet_avancado_exercicio1/obj/Debug/net7.0/dotnet_avancado_exercicio1.AssemblyInfoInputs.cache
+/home/matheus-fonseca-nascimento/Documentos/Workspace/DOTNET Avancado/restic18_dotnet_avancado/dotnet_avancado_exercicio1/obj/Debug/net7.0/dotnet_avancado_exercicio1.AssemblyInfo.cs
+/home/matheus-fonseca-nascimento/Documentos/Workspace/DOTNET Avancado/restic18_dotnet_avancado/dotnet_avancado_exercicio1/obj/Debug/net7.0/dotnet_avancado_exercicio1.csproj.CoreCompileInputs.cache
+/home/matheus-fonseca-nascimento/Documentos/Workspace/DOTNET Avancado/restic18_dotnet_avancado/dotnet_avancado_exercicio1/obj/Debug/net7.0/dotnet_avancado_exercicio1.dll
+/home/matheus-fonseca-nascimento/Documentos/Workspace/DOTNET Avancado/restic18_dotnet_avancado/dotnet_avancado_exercicio1/obj/Debug/net7.0/refint/dotnet_avancado_exercicio1.dll
+/home/matheus-fonseca-nascimento/Documentos/Workspace/DOTNET Avancado/restic18_dotnet_avancado/dotnet_avancado_exercicio1/obj/Debug/net7.0/dotnet_avancado_exercicio1.pdb
+/home/matheus-fonseca-nascimento/Documentos/Workspace/DOTNET Avancado/restic18_dotnet_avancado/dotnet_avancado_exercicio1/obj/Debug/net7.0/dotnet_avancado_exercicio1.genruntimeconfig.cache
+/home/matheus-fonseca-nascimento/Documentos/Workspace/DOTNET Avancado/restic18_dotnet_avancado/dotnet_avancado_exercicio1/obj/Debug/net7.0/ref/dotnet_avancado_exercicio1.dll
