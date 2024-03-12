@@ -243,3 +243,5 @@
 10.2. Em que cenários você optaria por usar uma classe abstrata em vez de uma interface?
 
 10.3. Dê um exemplo de implementação de uma interface em C#.
+
+**lido denis**
