@@ -1,0 +1,292 @@
+2. Sintaxe Básica de C#: Variáveis, Tipos de Dados e Operadores:**
+2.1. Explique a importância das variáveis em C# e forneça um exemplo de declaração.
+{
+    Variáveis são utilizadas para armazenar valores de diferentes tipos, sendo que estes valores são utilizadas
+    durante a exeução de ações que são definidas no código.
+    
+    Ex: string palavra = "conteudo da variavel"
+}
+
+2.2. Quais são os tipos de dados básicos em C# e como são utilizados?
+{
+    Os tipos de variáveis básicas são:
+    string - usadas para armazenar caracteres (que são, grosseiramente, letras)
+    int - usadas para armazenar numeros inteiros
+    float - usadas para armazenar numeros decimais
+    double - similar ao float, porém com mais espaço de memória por padrão
+    boolean - variaveis lógicas, representam "verdadeiro" ou "falso"
+}
+
+2.3. Dê exemplos de operadores aritméticos e lógicos em C#.
+{
+    Aritméticos:
+    +, -, *, /, ^, %
+    
+    Lógicos:
+    and/&&, or/||, not/!, >, <, >=, <=, ==, ===, !=
+}
+
+**3. Estruturas de Controle de Fluxo: Condicionais e Loops em C#:**
+3.1. Como as estruturas condicionais são implementadas em C#? Dê um exemplo.
+{
+    Elas são implementadas de forma que elas precisam checar o valor boolean 
+    (verdadeiro ou falso) de uma variável, expressão ou retorno de função
+    e a partir desse valor, seguir passos definidos pelo código.
+    
+    Ex: 
+    int x = 10;
+    if(x<10)
+	console.WriteLine("x é menor do que 10")
+    else
+    	console.WriteLine("x não é menor do que 10")
+}
+
+3.2. Explique o funcionamento dos loops em C# e forneça um exemplo de uso.
+{
+    Loops são utilizados para repetir uma certa seção/bloco de código. O loop será
+    repetido enquanto a sua condição estiver sendo cumprida.
+    
+    Ex: //Para a variavel int i, enquanto ela for menor que ou igual a 10 (essa é a condição), repita esse laço e no final
+    for(int i = 1; i <= 10; i++)
+    	console.writeLine(i)
+    	
+    //imprime de 1 a 10
+}
+
+3.3. Qual é a diferença entre o "for" e o "while" em termos de controle de fluxo?
+{
+    Enquanto o for tem a opção de executar uma ação no final de cada iteração do loop,
+    o while não tem essa opção, sendo obrigatório que a execução que "supriria" a condição do loop em
+    algum momento esteja dentro da repetição em si. Por exemplo:
+    
+    //Para imprimir de 0 a 99
+    
+    for(int i = 0; i < 10; i++)
+    	console.writeline(i)
+
+    int i = 0
+    while(i < 10)
+    	console.writeline(i++)
+}
+
+**4. Strings, Arrays e Listas, Datas:**
+4.1. Descreva operações comuns realizadas em strings em C#.
+{
+    Atribuição de valor:
+    string palavra = "casa"
+    palavra = "computador"
+    
+    Concatenação de string:
+    	string frase = "Olá, meu nome é "
+    	string nome = "Cauã"
+    	string fraseCompleta = frase + nome
+
+    Funções diversas que: 
+    	Retornam uma seção da string a partir de posição inicial e uma quantidade (substring)
+    	Pegam uma string, dividem ela em partes a partir de um parâmetro e retornam um array de strings (split)
+    	
+}
+
+4.2. Compare e contraste Arrays e Listas em termos de funcionalidade e uso.
+{
+    Arrays são "estáticos" se tratando de memória e pointers, de forma que uma vez declarado,
+    o array terá como espaço aquele tamanho pré-definido. Com isso, apesar da limitação do tamanho ser fixo, 
+    o array é mais leve e rápido. 
+    
+    Em contrapartida, listas possuem tamanho variado, além de permitir a mudança da ordem de seus elementos.
+    
+    Quando sabemos que vamos trabalhar com um tamanho fixo de dados, podemos utilizar um array, já
+    que esse é mais rápido. Quando vamos trabalhar com um tamanho variado de dados, podemos utilizar
+    uma lista.
+    
+}
+
+4.3. Como as datas são representadas e manipuladas em C#? Dê exemplos.
+{
+    Datas são representadas como um tipo de dado específico DateTime, ou algumas variações
+    como DateOnly. 
+}
+
+**5. Language Integrated-Query (LINQ):**
+5.1. O que é o LINQ e qual é sua finalidade em C#?
+{
+	Linq é uma forma de utilizar\ aplicar funções em listas em c#. Podemos por exemplo
+	passar por toda uma lista de objetos de determinada classe e alterar apenas os que 
+	atingirem certa condição. Apesar de da ideia da funcionalidade ser próxima ao "for" loop,
+	Linq oferece uma visualização mais "fácil de compreender e entender" se comparado aos laços 
+	de repetição padrão, em alguns casos
+}
+
+5.2. Forneça um exemplo prático de utilização do LINQ em uma coleção de dados.
+{
+	// Pegar uma lista inicial e passar todos os elementos da lista inicial para a secundaria, porém capitalizada
+	List<string> listaMinuscula = new List<string> { "alfa", "beta", "gama" };
+	List<string> listaCapitalizada = listaMinuscula.Select(s => s.ToUpper()).ToList();
+}
+
+5.3. Quais são as vantagens de usar o LINQ em comparação com abordagens convencionais?
+{
+	Como mencionei anteriormente, Linq oferece uma visualização mais "fácil de compreender e entender" se comparado aos laços 
+	de repetição padrão, em alguns casos.
+}
+
+
+**6. Debugging e Exceções:**
+6.1. Descreva o processo de debugging em C# e mencione ferramentas úteis.
+{
+	Debugging é um processo que não tive muita prática, mas ele serve para marcar pontos
+	do código e, durante a execução, estes pontos serão "parados" para que possamos analisar
+	o que aconteceu e está acontecendo até aquele ponto do código. A partir dali, podemos ir passo
+	a passo no nosso código para entendermos o que está acontecendo (útil para análise de erros)
+}
+
+6.2. Qual é o papel das exceções em C#? Como são tratadas no código?
+{
+	Exceções têm como função mostrar os erros do código a partir de mensagens. Essas mensagens podem ser
+	padrão do sistema ou personalizadas (criadas pelo programador). Elas podem ser retornadas por catch's
+}
+
+6.3. Dê um exemplo de como utilizar a declaração "try-catch" para lidar com exceções.
+{
+	try{
+		int x = 10/0;
+	}
+	catch{
+		console.log(Exception message)
+	}
+
+	//Não me lembro muito bem como definir ou mostrar as mensagens de exceção, mas sei que é quase isso
+}
+
+**7. Conceitos de POO em C#:**
+7.1. Explique o que é Programação Orientada a Objetos (POO) e sua importância em C#.
+{
+	POO tem como objetivo utilizar a estrutura de objetos como forma de representar os objetos da vida real.
+	Portanto, objetos possuem atributos de diferentes valores, fazem parte de classes ou subclasses, etc.
+	São importantes em c# pois permitem maiores níveis de abstração
+
+	// Não tenho certeza quanto a questão da importância
+}
+
+7.2. Quais são os pilares da POO? Descreva cada um brevemente.
+{
+	Não me lembro muito bem, porém conceitos importantes em POO são:
+	Herança; Polimorfismo; Métodos; Encapsulamento
+}
+
+7.3. Dê um exemplo prático de como um objeto é criado em C#.
+{
+	public class Carro{
+		private string marca ;
+		public float kmRodados = 0;
+		public float velocidadeMax;
+		
+		public string getMarca(){
+			return this.marca;
+		}
+	}
+}
+
+
+**8. Encapsulamento, Construtores e Destrutores:**
+8.1. Por que o encapsulamento é considerado importante na Programação Orientada a Objetos?
+{
+	É importante pois permite que possamos protejer certos atributos e métodos de nossas
+	classes. Também é importante quando pensamos em herança, já que ela também é afetada pelo encapsulamento
+}
+
+8.2. Explique a função dos construtores e destrutores em uma classe C#.
+{
+	Construtores são utilizados para personalizar como os objetos de determinadas classes são
+	criados/ contruidos. Utilizando construtores, podemos garantir que nossos objetos sejam
+	construídos de uma forma correta 
+}
+
+8.3. Como você implementaria um construtor em uma classe?
+{
+		public class Carro{
+	
+		public Carro(string marca, float velocidadeMax, float kmRodados){
+			this.marca = marca;
+			this.velocidadeMax = velocidadeMax;
+			this.kmRodados = kmRodados;
+		}
+
+		private string marca ;
+		public float kmRodados = 0;
+		public float velocidadeMax;
+		
+		public string getMarca(){
+			return this.marca;
+		}
+	}
+}
+
+
+**9. Herança e Polimorfismo:**
+9.1. O que é herança em C# e como ela é aplicada?
+{
+	Herança é utilizada para criar classes que pertencem a uma classe maior.
+	Por exemplo, uma classe autommóvel poderá como classes filhas "Carro, Moto, Trator",
+	Já que, apesar deles serem diferentes, todos eles têm características de automóvel. 
+}
+
+
+9.2. Explique o conceito de polimorfismo e forneça um exemplo prático.
+{
+	Polimorfismo está relacionado a fazer com que um método pertencente a uma classe maior
+	tenha diferentes ações de acordo com a classe menor a que ele foi chamado.
+
+	public class Automovel{
+		public int qtdeRodas;
+		public int qtdePortas;
+		public virtual void fazerSom();
+	}
+
+	public class Carro : Automovel{
+		public void fazerSom(){
+			console.log("Rooom")
+		}
+	}
+}
+
+9.3. Quais são as vantagens da herança e do polimorfismo na programação orientada a objetos?
+{
+	Permite que os objetos e classes se relacionem e compartilhem métodos e funcionalidades, aumentando 
+	as possibilidades e sua complexibilidade
+}
+
+**10. Classes Abstratas e Interfaces:**
+10.1. Qual é a diferença entre uma classe abstrata e uma interface em C#?
+{
+	Enquanto uma classe abstrata pode fornecer ou não métodos que também podem ser ou não 
+	sobreescritos, a interface apenas passa para a classe um "contrato" em que ela precisa ter certos
+	atributos e métodos, métodos esses que nunca serão definidos, mas precisam ser implementados dentro da classe
+}
+
+10.2. Em que cenários você optaria por usar uma classe abstrata em vez de uma interface?
+{
+	Quando eu preciso que determinadas classes, por algum motivo, devam ter um mesmo método implementado,
+	posso utilizar uma classe abstrata, já que já estará implementado. Porém, quando eu apenas preciso de uma
+	base para funções, mas elas serão diferentes umas das outras, uma interface será melhor, 
+	já que ela exige que certo método seja implementado, mas não especifica como deve ser implementado
+}
+
+10.3. Dê um exemplo de implementação de uma interface em C#.
+{
+	public Interface SerVivo{
+		public void respirar();
+		public void comer();
+		public void reproduzir();
+	}
+
+	public class Cachorro : SerVivo{
+		//Aqui seriam implementados os 3 métodos obrigatórios de um ser vivo.
+		//Obviamente, a forma de respirar, comer e se reproduzir de um cachorro é
+		//Completamente diferente de uma água-viva, por exemplo
+	}
+
+	public class AguaViva : SerVivo{
+		//forma de respirar, comer, reproduzir de uma água viva
+	}
+}
