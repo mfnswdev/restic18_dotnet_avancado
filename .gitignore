@@ -1,0 +1,96 @@
+# .NET
+bin/
+obj/
+*.dll
+*.exe
+*.pdb
+*.userprefs
+
+# Visual Studio Code
+.vscode/
+
+# NuGet
+*.nuget.props
+*.nuget.targets
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+
+# MSTest test Results
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+
+# NUNIT
+*.VisualState.xml
+TestResult.xml
+
+# Build Results of an ATL Project
+[Dd]ebugPS/
+[Rr]eleasePS/
+dlldata.c
+
+# .NET Core
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# StyleCop
+StyleCopReport.xml
+
+# Files and directories created by Visual Studio
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Ww][Ii][Nn]32/
+[Ww][Ii][Nn]64/
+[Rr]elease[Ww]in32/
+[Rr]elease[Ww]in64/
+[Bb]uild[Bb]in/
+[Bb]uild[Rr]elease/
+[Bb]uild[Ww]in32/
+[Bb]uild[Ww]in64/
+[Oo]bj/
+[Ll]og/
+[Tt]est[Rr]esults/
+[Tt]est[Rr]esults[Rr]eader/
+[Tt]est[Rr]esults[Ww]riter/
+[Tt]est[Rr]esults[Dd]irectory/
+[Tt]est[Rr]esults[Dd]irectory[Dd]ata/
+*.VC.db
+*.VC.VC.opendb
+*.suo
+*.user
+*.aps
+*.vbw
+*.vspscc
+*_i.c
+*_p.c
+*.ncb
+*.sdf
+*.opensdf
+*.cachefile
+*.VC.opendb
+*.sln.docstates
+
+# Rider
+.idea/
+*.sln.iml
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
+\#*\#
+*.swp
