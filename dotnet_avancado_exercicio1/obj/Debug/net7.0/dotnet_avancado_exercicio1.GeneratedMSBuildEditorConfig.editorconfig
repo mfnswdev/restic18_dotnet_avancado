@@ -8,4 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = dotnet_avancado_exercicio1
-build_property.ProjectDir = /home/matheus-fonseca-nascimento/Documentos/Workspace/DOTNET Avancado/restic18_dotnet_avancado/dotnet_avancado_exercicio1/
+build_property.ProjectDir = C:\Users\User\Desktop\DOTNET Avancado\restic18_dotnet_avancado\dotnet_avancado_exercicio1\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 

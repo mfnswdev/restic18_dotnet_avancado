@@ -5,18 +5,60 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotnet_avancado_exercicio1", "dotnet_avancado_exercicio1\dotnet_avancado_exercicio1.csproj", "{7668EDE1-D543-4091-974B-BAE1CBDF6148}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "dotnet_avancado_exercicio2", "dotnet_avancado_exercicio2", "{CC98C6AD-9733-4D2C-A91E-C84353BFACB6}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercicio_Aula3", "dotnet_avancado_exercicio2\Exercicio_Aula3\Exercicio_Aula3.csproj", "{4CD27375-E2EC-481D-A6C7-A6BDA516C066}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercicio2_Aula3", "dotnet_avancado_exercicio2\Exercicio2_Aula3\Exercicio2_Aula3.csproj", "{3DD2C507-5F01-48FF-8098-514FBCD22D7F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercicio3_Aula3", "dotnet_avancado_exercicio2\Exercicio3_Aula2\Exercicio3_Aula3.csproj", "{172FF35D-113E-4A69-B814-8CE802509183}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercicio4_Aula3", "dotnet_avancado_exercicio2\Exercicio4_Aula3\Exercicio4_Aula3.csproj", "{90DB8A53-D2AD-4AC0-AFCB-12A8709DA9B7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercicio5_Aula3", "dotnet_avancado_exercicio2\Exercicio5_Aula3\Exercicio5_Aula3.csproj", "{CDC729D7-5F16-4E33-AD9E-5ACCB0EE35C1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{7668EDE1-D543-4091-974B-BAE1CBDF6148}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7668EDE1-D543-4091-974B-BAE1CBDF6148}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7668EDE1-D543-4091-974B-BAE1CBDF6148}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7668EDE1-D543-4091-974B-BAE1CBDF6148}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CD27375-E2EC-481D-A6C7-A6BDA516C066}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CD27375-E2EC-481D-A6C7-A6BDA516C066}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CD27375-E2EC-481D-A6C7-A6BDA516C066}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CD27375-E2EC-481D-A6C7-A6BDA516C066}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3DD2C507-5F01-48FF-8098-514FBCD22D7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DD2C507-5F01-48FF-8098-514FBCD22D7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DD2C507-5F01-48FF-8098-514FBCD22D7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DD2C507-5F01-48FF-8098-514FBCD22D7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{172FF35D-113E-4A69-B814-8CE802509183}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{172FF35D-113E-4A69-B814-8CE802509183}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{172FF35D-113E-4A69-B814-8CE802509183}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{172FF35D-113E-4A69-B814-8CE802509183}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90DB8A53-D2AD-4AC0-AFCB-12A8709DA9B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90DB8A53-D2AD-4AC0-AFCB-12A8709DA9B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90DB8A53-D2AD-4AC0-AFCB-12A8709DA9B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90DB8A53-D2AD-4AC0-AFCB-12A8709DA9B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDC729D7-5F16-4E33-AD9E-5ACCB0EE35C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDC729D7-5F16-4E33-AD9E-5ACCB0EE35C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDC729D7-5F16-4E33-AD9E-5ACCB0EE35C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDC729D7-5F16-4E33-AD9E-5ACCB0EE35C1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4CD27375-E2EC-481D-A6C7-A6BDA516C066} = {CC98C6AD-9733-4D2C-A91E-C84353BFACB6}
+		{3DD2C507-5F01-48FF-8098-514FBCD22D7F} = {CC98C6AD-9733-4D2C-A91E-C84353BFACB6}
+		{172FF35D-113E-4A69-B814-8CE802509183} = {CC98C6AD-9733-4D2C-A91E-C84353BFACB6}
+		{90DB8A53-D2AD-4AC0-AFCB-12A8709DA9B7} = {CC98C6AD-9733-4D2C-A91E-C84353BFACB6}
+		{CDC729D7-5F16-4E33-AD9E-5ACCB0EE35C1} = {CC98C6AD-9733-4D2C-A91E-C84353BFACB6}
 	EndGlobalSection
 EndGlobal

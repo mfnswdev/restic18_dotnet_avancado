@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "LG7f7S6BlYH1oB570HGLr/peu09vb/8MQdRVaGRvRT0pQYLZIpFCY+WKdNaOhwPY0Z/JC+jCHlID5gyL5ruYrA==",
+  "dgSpecHash": "3s4lDw+7ARENdi6mwpWMLFiP739TiiOaaDCRDfOggKkx+J/L07QxQuxQrIh4or3yWnO6rSqyOsawcF2G6t7ooQ==",
   "success": true,
-  "projectFilePath": "/home/matheus-fonseca-nascimento/Documentos/Workspace/DOTNET Avancado/restic18_dotnet_avancado/dotnet_avancado_exercicio1/dotnet_avancado_exercicio1.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\User\\Desktop\\DOTNET Avancado\\restic18_dotnet_avancado\\dotnet_avancado_exercicio1\\dotnet_avancado_exercicio1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\User\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.14\\microsoft.netcore.app.ref.7.0.14.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.14\\microsoft.windowsdesktop.app.ref.7.0.14.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.14\\microsoft.aspnetcore.app.ref.7.0.14.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.14\\microsoft.netcore.app.host.win-x64.7.0.14.nupkg.sha512"
+  ],
   "logs": []
 }
