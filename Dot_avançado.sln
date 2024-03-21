@@ -3,19 +3,29 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aula02_avancado", "Aula02_avancado\Aula02_avancado.csproj", "{8E124375-3CB9-4609-9C6A-C51F04F7C46A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aula02_avancado", "Aula02_avancado\Aula02_avancado.csproj", "{8E124375-3CB9-4609-9C6A-C51F04F7C46A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exercicio02_Generics", "Exercicio02_Generics", "{28453A62-0ED9-483F-BE18-06820B7BFBB7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "quest1", "Exercicio02_Generics\quest1\quest1.csproj", "{93F36380-F22E-495C-8E53-42BBCD3051FA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "quest1", "Exercicio02_Generics\quest1\quest1.csproj", "{93F36380-F22E-495C-8E53-42BBCD3051FA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "quest2", "Exercicio02_Generics\quest2\quest2.csproj", "{B7489AB9-CCBE-49F2-969C-890473148A12}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "quest2", "Exercicio02_Generics\quest2\quest2.csproj", "{B7489AB9-CCBE-49F2-969C-890473148A12}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "quest3", "Exercicio02_Generics\quest3\quest3.csproj", "{C2AB182F-7351-4810-A2F6-329CD69F9079}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "quest3", "Exercicio02_Generics\quest3\quest3.csproj", "{C2AB182F-7351-4810-A2F6-329CD69F9079}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "quest4", "Exercicio02_Generics\quest4\quest4.csproj", "{2D5CA1BB-3A2D-424A-AFE2-A3AEAE92F137}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "quest4", "Exercicio02_Generics\quest4\quest4.csproj", "{2D5CA1BB-3A2D-424A-AFE2-A3AEAE92F137}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "quest5", "Exercicio02_Generics\quest5\quest5.csproj", "{0171A912-D83E-4623-9881-E436F68191AC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "quest5", "Exercicio02_Generics\quest5\quest5.csproj", "{0171A912-D83E-4623-9881-E436F68191AC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exercicio03_Delegate, Linq, Threads e Async-Await", "Exercicio03_Delegate, Linq, Threads e Async-Await", "{40B315C4-93DF-4FAC-9EA4-AA447011B961}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "quest1", "quest1\quest1.csproj", "{7F447D55-9D7D-4350-ABFC-19CD34ED3B74}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "quest2", "quest2\quest2.csproj", "{AE371FED-30C9-4F9A-B1AF-8C99A6F8B4AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "quest3", "quest3\quest3.csproj", "{6C0CFCB6-8EA0-4145-819F-405621CB63CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "quest4", "quest4\quest4.csproj", "{BC3E7445-31CC-45B9-AAA8-5F751CCD524E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,6 +57,22 @@ Global
 		{0171A912-D83E-4623-9881-E436F68191AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0171A912-D83E-4623-9881-E436F68191AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0171A912-D83E-4623-9881-E436F68191AC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F447D55-9D7D-4350-ABFC-19CD34ED3B74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F447D55-9D7D-4350-ABFC-19CD34ED3B74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F447D55-9D7D-4350-ABFC-19CD34ED3B74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F447D55-9D7D-4350-ABFC-19CD34ED3B74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE371FED-30C9-4F9A-B1AF-8C99A6F8B4AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE371FED-30C9-4F9A-B1AF-8C99A6F8B4AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE371FED-30C9-4F9A-B1AF-8C99A6F8B4AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE371FED-30C9-4F9A-B1AF-8C99A6F8B4AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C0CFCB6-8EA0-4145-819F-405621CB63CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C0CFCB6-8EA0-4145-819F-405621CB63CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C0CFCB6-8EA0-4145-819F-405621CB63CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C0CFCB6-8EA0-4145-819F-405621CB63CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC3E7445-31CC-45B9-AAA8-5F751CCD524E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC3E7445-31CC-45B9-AAA8-5F751CCD524E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC3E7445-31CC-45B9-AAA8-5F751CCD524E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC3E7445-31CC-45B9-AAA8-5F751CCD524E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -57,5 +83,9 @@ Global
 		{C2AB182F-7351-4810-A2F6-329CD69F9079} = {28453A62-0ED9-483F-BE18-06820B7BFBB7}
 		{2D5CA1BB-3A2D-424A-AFE2-A3AEAE92F137} = {28453A62-0ED9-483F-BE18-06820B7BFBB7}
 		{0171A912-D83E-4623-9881-E436F68191AC} = {28453A62-0ED9-483F-BE18-06820B7BFBB7}
+		{7F447D55-9D7D-4350-ABFC-19CD34ED3B74} = {40B315C4-93DF-4FAC-9EA4-AA447011B961}
+		{AE371FED-30C9-4F9A-B1AF-8C99A6F8B4AE} = {40B315C4-93DF-4FAC-9EA4-AA447011B961}
+		{6C0CFCB6-8EA0-4145-819F-405621CB63CD} = {40B315C4-93DF-4FAC-9EA4-AA447011B961}
+		{BC3E7445-31CC-45B9-AAA8-5F751CCD524E} = {40B315C4-93DF-4FAC-9EA4-AA447011B961}
 	EndGlobalSection
 EndGlobal
